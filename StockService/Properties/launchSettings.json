@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "StockService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5152;https://localhost:7214"
+    }
+  }
+}

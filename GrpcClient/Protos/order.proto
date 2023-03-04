@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "GrpcClient";
+package order;
+
+service Order {
+  rpc CreateOrder (OrderServiceOrderModel) returns (OrderServiceResponse);
+}
+
+message OrderServiceOrderModel {
+	repeated OrderServiceReserveProductModel products = 1;
+}
+
+message OrderServiceResponse {
+	bool success = 1;
+	string message = 2;
+}
+
+message OrderServiceReserveProductModel {
+	string id = 1;
+	int32 quantity = 2;
+}
